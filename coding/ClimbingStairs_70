@@ -1,0 +1,15 @@
+class Solution(object):
+    def climbStairs(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        import math
+        two = n // 2
+        count = 0
+        for i in range(two+1):
+            t = i*2
+            o = n - t
+            count += math.factorial(i+o)/(math.factorial(i)*math.factorial(o))
+        return count
+    

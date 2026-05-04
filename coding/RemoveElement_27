@@ -1,0 +1,13 @@
+class Solution(object):
+    def removeElement(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        aa = []
+        for i, num in enumerate(nums):
+            if num != val:
+                aa.append(num)
+        nums[:] = aa
+        return len(nums)

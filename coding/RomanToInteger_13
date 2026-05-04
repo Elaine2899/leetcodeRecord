@@ -1,0 +1,47 @@
+class Solution(object):
+    def romanToInt(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        sum = 0
+        if 'CM' in s:
+            sum += 900*s.count('CM')
+            s = s.replace('CM', '')
+        if 'CD' in s:
+            sum += 400*s.count('CD')
+            s = s.replace('CD', '')
+        if 'XC' in s:
+            sum += 90*s.count('XC')
+            s = s.replace('XC', '')
+        if 'XL' in s:
+            sum += 40*s.count('XL')
+            s = s.replace('XL', '')
+        if 'IX' in s:
+            sum += 9*s.count('IX')
+            s = s.replace('IX', '')
+        if 'IV' in s:
+            sum += 4*s.count('IV')
+            s = s.replace('IV', '')
+        if 'I' in s:
+            sum += s.count('I')
+            s = s.replace('I', '')
+        if 'V' in s:
+            sum += 5*s.count('V')
+            s = s.replace('V', '')
+        if 'X' in s:
+            sum += 10*s.count('X')
+            s = s.replace('X', '')
+        if 'L' in s:
+            sum += 50*s.count('L')
+            s = s.replace('L', '')
+        if 'C' in s:
+            sum += 100*s.count('C')
+            s = s.replace('C', '')
+        if 'D' in s:
+            sum += 500*s.count('D')
+            s = s.replace('D', '')
+        if 'M' in s:
+            sum += 1000*s.count('M')
+            s = s.replace('M', '')
+        return sum

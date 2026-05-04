@@ -1,0 +1,13 @@
+class Solution(object):
+    def simplifyPath(self, path):
+        li = path.split("/")
+        carry = []
+        for i in li:
+            if i == "" or i == ".":
+                continue
+            elif i == "..":
+                if carry:
+                    carry.pop()
+            else:
+                carry.append(i)
+        return "/" + "/".join(carry)

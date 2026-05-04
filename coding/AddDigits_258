@@ -1,0 +1,25 @@
+class Solution(object):
+    def addDigits(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        if num < 10:
+            return num
+        tem = num
+        sum = 0
+        twoDig = True
+        while twoDig:
+            while tem > 0:
+                sum += tem%10
+                tem /= 10
+            if sum > 9:
+                tem = sum
+                sum = 0
+            else:
+                twoDig = False
+        return sum
+            
+
+
+        

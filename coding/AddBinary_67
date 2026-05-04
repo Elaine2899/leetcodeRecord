@@ -1,0 +1,30 @@
+class Solution(object):
+    def addBinary(self, a, b):
+        """
+        :type a: str
+        :type b: str
+        :rtype: str
+        """
+
+        while len(a) > len(b):
+            b = "0" + b
+        while len(b) > len(a):
+            a = "0" + a
+
+        carry = 0
+        result = []
+
+        for i in range(len(a)-1, -1, -1):
+            bit_a = int(a[i])
+            bit_b = int(b[i])
+            total = bit_a + bit_b + carry
+            result.append(str(total % 2))
+            carry = total // 2
+
+        if carry:
+            result.append("1")
+
+        result = result[::-1]
+        strC = "".join(result)
+
+        return strC

@@ -1,0 +1,17 @@
+class Solution(object):
+    def generate(self, numRows):
+        """
+        :type numRows: int
+        :rtype: List[List[int]]
+        """
+        li = []
+        for i in range(numRows):
+            ro = [1] * (i+1)
+            for j in range(1, i):
+                ro[j] = li[i-1][j-1] + li[i-1][j]
+
+
+            li.append(ro)
+        
+        return(li)
+        
