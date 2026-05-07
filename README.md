@@ -2,6 +2,7 @@
 記錄我的 leetcode 歷程
 
 ---
+- 2026 May. 7 - 100. Same Tree
 - 2026 May. 7 - Binary Tree Inorder Traversal_94
 - 2026 May. 7 - Ransom Note_383
 - 2026 Apr. 29 - FindMissingAndRepeatedValues_2965
