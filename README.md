@@ -2,6 +2,7 @@
 記錄我的 leetcode 歷程
 
 ---
+- 2026 May. 7 - Ransom Note_383
 - 2026 Apr. 29 - FindMissingAndRepeatedValues_2965
 - 2026 Apr. 29 - NextGreaterElementI_496
 - 2026 Apr. 25 - PowerOfTwo_231
