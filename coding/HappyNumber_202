@@ -1,0 +1,28 @@
+class Solution(object):
+    def isHappy(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        re = {}
+        tem = 0
+        
+        def squ(p):
+            curr = 0
+            while p > 0:
+                curr += (p % 10) ** 2
+                p //= 10
+            if curr in re:
+                return -1
+            re[curr] = 1
+            return curr
+        tem = squ(n)
+        while tem != 1:
+            if tem == -1:
+                return False
+            tem = squ(tem)
+        if tem == 1:
+            return True
+        else:
+            return False
+
