@@ -2,6 +2,7 @@
 記錄我的 leetcode 歷程
 
 ---
+- 2026 May. 8 - Remove Duplicates from Sorted List_83
 - 2026 May. 8 - Happy Number_202
 - 2026 May. 7 - MaximumDepthofBinaryTree＿104
 - 2026 May. 7 - Symmetric Tree_101
