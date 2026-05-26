@@ -1,0 +1,58 @@
+class Solution(object):
+    def addStrings(self, num1, num2):
+        """
+        :type num1: str
+        :type num2: str
+        :rtype: str
+        """
+        # 補位
+        if len(num1) > len(num2):
+            diff = len(num1) - len(num2)
+            num2 = "0" * diff + num2
+            
+        else:
+            diff = len(num2) - len(num1)
+            num1 = "0" * diff + num1
+
+        size = len(num1)
+        ans = ""
+        add = False
+        i = -1
+
+        while True:
+            if -i <= size:
+                tem = ord(num1[i]) + ord(num2[i]) - 96
+            else:
+                ans = ans + "1"
+                break
+
+            if tem > 9:
+                tem = tem - 10
+                if add:
+                    tem = tem + 1
+                    ans = ans + str(tem)
+                else:
+                    ans = ans + str(tem)
+                add = True
+            else:
+                if add:
+                    if tem == 9:
+                        tem = 0
+                        add = True
+                    else:
+                        tem = tem + 1
+                        add = False
+                    ans = ans + str(tem)
+                else:
+                    ans = ans + str(tem)
+                    add = False
+            i -= 1
+            if -i <= size or add:
+                continue
+            else:
+                break
+
+
+
+        ans = ans[::-1]
+        return ans
