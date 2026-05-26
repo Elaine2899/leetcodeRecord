@@ -2,6 +2,8 @@
 記錄我的 leetcode 歷程
 
 ---
+- 2026 May. 26 - CountTheNumberOfSpecialCharactersI_3120
+- 2026 May. 26 - NextGreaterElementII_503
 - 2026 May. 25 - Minimum Average of Smallest and Largest Elements_3194
 - 2026 May. 8 - Remove Duplicates from Sorted List_83
 - 2026 May. 8 - Happy Number_202
