@@ -1,0 +1,22 @@
+class Solution:
+    def numberOfSpecialChars(self, word: str) -> int:
+        uDic = {}
+        lDic = {}
+        count = 0
+        for i in word:
+            if ord(i) >= ord("A") and ord(i) <= ord("Z"):
+                # upper word
+                if i in uDic:
+                    uDic[i] += 1
+                else:
+                    uDic[i] = 1
+            elif ord(i) >= ord("a") and ord(i) <= ord("z"):
+                # lower w
+                if i in lDic:
+                    lDic[i] += 1
+                else:
+                    lDic[i] = 1
+        for char in uDic:
+            if chr(ord(char) + 32) in lDic:
+                count += 1
+        return count
