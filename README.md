@@ -2,7 +2,7 @@
 記錄我的 leetcode 歷程
 
 ---
-- 
+- 026 May. 28 - BaseballGame_682
 - 2026 May. 28 - N-ary Tree Postorder Traversal_590
 - 2026 May. 27 - Count the Number of Special Characters II_3121
 - 2026 May. 26 - Count the Number of Special CharactersI_3120
