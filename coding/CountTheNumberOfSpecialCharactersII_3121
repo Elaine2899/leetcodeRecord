@@ -1,0 +1,19 @@
+class Solution:
+    def numberOfSpecialChars(self, word: str) -> int:
+        count = 0
+        lDic = {}
+        for char in word:
+            if char.islower():
+                if char not in lDic:
+                    lDic[char] = "firstLower"
+                elif lDic[char] == "upper":
+                    lDic[char] = "notCount"
+            elif char.isupper():
+                tem = char.lower()
+                if tem in lDic and lDic[tem] == "firstLower":
+                    lDic[tem] = "upper"
+                elif tem not in lDic:
+                    lDic[tem] = "notCount"
+
+        count = sum(1 for value in lDic.values() if value == "upper")
+        return count
