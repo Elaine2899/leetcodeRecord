@@ -2,7 +2,9 @@
 記錄我的 leetcode 歷程
 
 ---
-- here
+- Here
+- 2026 Jun. 1 - DestroyingAsteroids_2126
+- 2026 Jun. 1 - MinimumCostOfBuyingCandiesWithDiscount_2144
 - 2026 May. 29 - DivisorGame_1025
 - 2026 May. 29 - NimGame292
 - 2026 May. 29 - ValidAnagram_242
