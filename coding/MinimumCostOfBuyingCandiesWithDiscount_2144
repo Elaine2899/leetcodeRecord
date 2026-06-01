@@ -1,0 +1,7 @@
+class Solution:
+    def minimumCost(self, cost: List[int]) -> int:
+        size = len(cost)
+        if size <= 2:
+            return sum(cost)
+        cost.sort(reverse = True)
+        return sum(cost[0::3]) + sum(cost[1::3])
