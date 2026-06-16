@@ -1,0 +1,21 @@
+class Solution:
+    def minMaxGame(self, nums: List[int]) -> int:
+        if len(nums) == 1:
+            return nums[0]
+        elif len(nums) == 2:
+            return min(nums)
+        tem = [0] * (len(nums) // 2)
+        currNums = nums
+        while True:
+            j = 0
+            for i in range(len(tem)):
+                if i % 2 != 0:
+                    tem[i] = max(currNums[j], currNums[j+1])
+                else:
+                    tem[i] = min(currNums[j], currNums[j+1])
+                j += 2
+            currNums = tem
+            if len(tem) == 1:
+                break
+            tem = [0] * (len(currNums) // 2)
+        return currNums[0]

@@ -3,6 +3,8 @@
 
 ---
 - Here
+- 2026 Jun. 5 - TotalWavinessOfNumbersInRangeI_3751
+- 2026 Jun. 5 - MinMaxGame_2293
 - 2026 Jun. 1 - DestroyingAsteroids_2126
 - 2026 Jun. 1 - MinimumCostOfBuyingCandiesWithDiscount_2144
 - 2026 May. 29 - DivisorGame_1025
