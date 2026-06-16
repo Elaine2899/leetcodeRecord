@@ -1,0 +1,13 @@
+class Solution:
+    def bitwiseComplement(self, n: int) -> int:
+        bitS = []
+        ans = 0
+        if n == 0:
+            return 1
+        while n > 0:
+            bitS.append(n%2)
+            n //= 2
+        for i, k in enumerate(bitS):
+            if k == 0:
+                ans += 2**i
+        return ans
