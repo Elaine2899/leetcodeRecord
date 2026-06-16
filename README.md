@@ -8,7 +8,8 @@
 - 2026 May. 29 - DivisorGame_1025
 - 2026 May. 29 - NimGame292
 - 2026 May. 29 - ValidAnagram_242
-- 2026 May. 29 - BReverseLinkedList_206
+- 2026 May. 29 - ReverseLinkedList_206
+- 2026 May. 28 - BaseballGame_682
 - 2026 May. 28 - MinimumElementAfterReplacementWithDigitSum_3300
 - 2026 May. 28 - N-ary Tree Postorder Traversal_590
 - 2026 May. 27 - Count the Number of Special Characters II_3121
