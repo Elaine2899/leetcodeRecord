@@ -3,11 +3,13 @@
 
 ---
 - Here
-- 2026 Jun. 6 - KthLargestElementInAnArray_215
-- 2026 Jun. 6 - AddTwoNumbers_2
+- 2026 Jun. 12 - ConstructTheMinimumBitwiseArrayI_3314
+- 2026 Jun. 9 - MaximumTotalSubarrayValueI_3689
 - 2026 Jun. 6 - LeftAndRightSumDifferences_2574
-- 2026 Jun. 5 - TotalWavinessOfNumbersInRangeI_3751
+- 2026 Jun. 6 - AddTwoNumbers_2
+- 2026 Jun. 6 - KthLargestElementInAnArray_215
 - 2026 Jun. 5 - MinMaxGame_2293
+- 2026 Jun. 5 - TotalWavinessOfNumbersInRangeI_3751
 - 2026 Jun. 1 - DestroyingAsteroids_2126
 - 2026 Jun. 1 - MinimumCostOfBuyingCandiesWithDiscount_2144
 - 2026 May. 29 - DivisorGame_1025
