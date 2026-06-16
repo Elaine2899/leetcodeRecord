@@ -1,0 +1,17 @@
+class Solution:
+    def processStr(self, s: str) -> str:
+        stack = []
+        for i in s:
+            match i:
+                case "*":
+                    if not stack:
+                        continue
+                    else:
+                        stack.pop()
+                case "#":
+                    stack = stack + stack
+                case "%":
+                    stack.reverse()
+                case _:
+                    stack.append(i)
+        return ''.join(stack)
