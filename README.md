@@ -2,8 +2,10 @@
 記錄我的 leetcode 歷程
 
 ---
-- 2026 Jun. 18 - AngleBetweenHandsOfAClock_1344
 - Here
+- 2026 Jun. 22 - FindTheHighestAltitude_1732
+- 2026 Jun. 22 - MaximumNumberOfBalloons_1189
+- 2026 Jun. 18 - AngleBetweenHandsOfAClock_1344
 - 2026 Jun. 16 - ProcessStringWithSpecialOperationsI_3612
 - 2026 Jun. 15 - DeleteTheMiddleNodeOfALinkedList_2095
 - 2026 Jun. 12 - ComplementOfBase10Integer_1009

@@ -1,0 +1,22 @@
+class Solution:
+    def maxNumberOfBalloons(self, text: str) -> int:
+        s = {"b" : 0, "a" : 0, "n" : 0}
+        d = {"l" : 0, "o" : 0}
+        for i in text:
+            if i in s:
+                s[i] += 1
+            elif i in d:
+                d[i] += 1
+
+        count = 0
+        while True:
+            ms = min(s.values())
+            md = min(d.values())
+            if ms > 0 and md > 1:
+                m = ms if ms*2 < md else md//2
+                s = { k : v-m for k, v in s.items()}
+                d = { k : v-m*2 for k, v in d.items()}
+                count += m
+            else:
+                return count
+\
