@@ -1,0 +1,17 @@
+class Solution:
+    def countMajoritySubarrays(self, nums: List[int], target: int) -> int:
+        size = len(nums)
+        ans = 0
+        tarC = 0
+        talC = 0
+        for i in range(size):
+            tarC = 0
+            talC = 0
+            for j in range(i, size):
+                if nums[j] == target:
+                    tarC += 1
+                else:
+                    talC += 1
+                if tarC > talC:
+                    ans += 1
+        return ans
